@@ -1,0 +1,16 @@
+dotenv: .env
+wallets:
+    from_key: ${PRIVATE_KEY}
+compiler:
+    solc:
+        version: 0.8.9
+        remappings:
+        - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.0.0"
+        - "@chiru-labs=chiru-labs/ERC721A@4.0.0"
+networks:
+    default: ganache-local
+    ganache-local:
+        verify: false
+dependencies:
+    - OpenZeppelin/openzeppelin-contracts@4.0.0
+    - chiru-labs/ERC721A@4.0.0
